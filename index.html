@@ -5,26 +5,308 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Taha Pek">
-    <meta name="description" content="kişisel web site">
-    <meta name="keywords" content="web,kişisel,kişisel web site,personal website,programlama,yazılım,geliştirme">
+    <meta name="author" content="Fehmi UYAR">
+    <meta name="description" content="web tasarım ve pazarlama">
+    <meta name="keywords" content="web,tasarım,dizayn,programlama,yazılım,geliştirme">
     <link href="img/man.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-    <title>New Design</title>
-
+    <title>Taha Pek Kişisel Web Sitesi</title>
     <style>
         @import url("css/all.css");
     </style>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/extra.css">
 </head>
 
-<body>
+<body id="page-body">
+    <!-- navigation start-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="new design website link">Taha Pek</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar"
+                aria-controls="myNavbar" aria-label="menüyü açma kapama butonu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Kapat">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-uppercase py-lg-2">
+
+                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#social-media" class="nav-link btn-close-canvas">Sosyal Medya</a>
+                        </li>
+                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation end-->
+
+    <!--header start-->
     <header class="backImage text-white text-center">
         <div class="container">
-            <div class="backImage-sub mb-4">Web Siteme Hoş Geldin!</div>
-            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha Fazla Anlat</a>
+            <div class="backImage-sub mb-4">Kişisel Web Siteme</div>
+            <div class="backImage-heading text-uppercase">Hoşgeldiniz</div>
+            <a href="#about" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha Fazla Anlat</a>
         </div>
     </header>
+    <!--header end-->
+
+    <!-- about start -->
+    <section id="about">
+        <div class="jumbotron">
+            <div class="container py-2">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/benimR.jpeg" class="rounded mx-auto d-block" alt="..." style="width: 75%;">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="display-4 text-light mt-4">Hakkımda</h1>
+
+                        <hr class="my-4 text-light">
+                        <p class="text-light">Merhabalar , ben Taha Pek.</p>
+                        <p class="text-light">09.08.2002 Sakarya'da doğdum.</p>
+                        <p class="text-light">Necmettin Erbakan Fen Lisesi mezunuyum.</p>
+                        <p class="text-light">Kocaeli Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencesiyim.</p>
+
+                        <div class="card mt-5  bg-dark text-light">
+                            <div class="card-header">
+                                <h5>Yetenekler</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <p class="lead">Apache-Spark</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">Python</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">Java</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <p class="lead">C</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">Git</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">SQL</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <p class="lead">HTML</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">CSS</p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">Bootstrap</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="container py-5 px-5">
+                        <h1 class="display-4 text-light">Tecrübelerim</h1>
+                        <hr class="my-4 text-light">
+
+                        <h6 class="display-6 text-light">Akan Büyük Veri Analizi (ABVAG):</h6>
+                        <P class="text-light">Kocaeli Üniversitesinin ABVAG ekibine dahil oldum.</P>
+                        <p class="text-light">Burada veri analizi ve arayüz geliştirmeyle alakalı teknolojilerle
+                            tanıştım ve
+                            bu teknolojileri kullanarak çeşitli uygulamalarda bulundum.</p>
+                        <p class="text-light">Burada Apache-Spark , Docker , Apache-Kafka , Linux gibi çeşitli
+                            teknolojileri
+                            kullandım.</p>
+                        <p class="text-light">Ekibimizle birlikte ortak çalışmalarda bulunarak takım çalışması
+                            yeteneğine
+                            sahip oldum.</p>
+                        <hr class="my-4 text-light">
+
+                        <h6 class="display-6 text-light">Okul:</h6>
+                        <p class="text-light">Yazılım dilleri , veri yapıları ve veri tabanı gibi çeşitli yapıları
+                            öğrendim.
+                        </p>
+                        <p class="text-light">Bizlere okul tarafından verilmiş olan projeleri başarılı bir şekilde
+                            yerine
+                            getirdim.</p>
+                        <hr class="my-4 text-light">
+
+                        <footer>
+                            <p class="lead text-light"><em>Yapmış olduğum çalışmalara göz atmak için <a
+                                        href="https://github.com/tahapek5454" target="_blank">github</a> sayfama göz
+                                    atabilirsiniz.</em></p>
+                        </footer>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- social start -->
+    <section id="social-media">
+
+        <div class="jumbotron">
+            <div class="container py-2">
+                <h4 class="display-4 text-light text-center">Sosyal Medya Hesaplarım</h4>
+                <hr class="my-4 text-light">
+                <div class="row">
+                    <div class="col-md-4 my-2">
+                        <center>
+                            <a id="linkedin" href="https://www.linkedin.com/in/taha-pek-413b1b221/" target="_blank"><img
+                                    src="img/linkedin.png" alt=""></a>
+                        </center>
+
+                    </div>
+                    <div class="col-md-4 my-2">
+
+                        <center>
+                            <a id="insta" href="https://www.instagram.com/tahapek/" target="_blank"><img
+                                    src="img/instagram.png" alt=""></a>
+                        </center>
+
+                    </div>
+                    <div class="col-md-4 my-2">
+
+                        <center>
+                            <a id="github" href="https://github.com/tahapek5454" target="_blank"><img
+                                    src="img/github.png" alt=""></a>
+                        </center>
+
+                    </div>
+
+                    <hr class="my-4 text-light">
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- socail end -->
+
+    <!-- contact start -->
+    <section id="contact" class="mySection">
+        <div class="jumbotron">
+            <div class="container py-2">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 text-white">İletişim</h2>
+                    <hr class="my-4 text-light">
+                </div>
+                <form class="needs-validation" action="https://formspree.io/f/mdojorww" method="POST" id="FrmContact" novalidate>
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input type="text" id="name" name="names" class="form-control" placeholder="Adınız" required
+                                    maxlength="40" aria-describedby="ErrName">
+                                <label for="name">Adınız
+                                    <span class="text-danger" aria-hidden="true">*</span>
+                                    <span class="visually-hidden">zorunlu alan</span>
+                                </label>
+                                <div class="invalid-feedback fst-italic fs-6" id="ErrName"></div>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="text" id="surname" name="surname" class="form-control" placeholder="Soyadınız" required
+                                    maxlength="40" aria-describedby="ErrSurname">
+                                <label for="surname">Soyadınız
+                                    <span class="text-danger" aria-hidden="true">*</span>
+                                    <span class="visually-hidden">zorunlu alan</span>
+                                </label>
+                                <div class="invalid-feedback fst-italic fs-6" id="ErrSurname"></div>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Eposta" required
+                                    maxlength="100" aria-describedby="ErrEmail">
+                                <label for="email">Eposta Adresiniz
+                                    <span class="text-danger" aria-hidden="true">*</span>
+                                    <span class="visually-hidden">zorunlu alan</span>
+                                </label>
+                                <div class="invalid-feedback fst-italic fs-6" id="ErrEmail"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating form-textarea mb-md-0">
+                                <textarea id="message" name="message" class="form-control" placeholder="Mesajınız" required
+                                    maxlength="300" aria-describedby="ErrMessage"></textarea>
+                                <label for="message">Mesajınız
+                                    <span class="text-danger" aria-hidden="true">*</span>
+                                    <span class="visually-hidden">zorunlu alan</span>
+                                </label>
+                                <div class="invalid-feedback fst-italic fs-6" id="ErrMessage"></div>
+                            </div>
+                            <div class="text-white text-end">
+                                <span id="current-character">0</span>
+                                <span> / 300</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3 mb-5" id="BtnContact">
+                            Mesaj Gönder
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact end -->
+
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="jumbotron">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-lg-start text-muted">
+                        19.08.2022
+                    </div>
+
+                    <div class="col-lg-6 text-lg-end">
+                        <a href="#" class="link-secondary text-decoration-none">Anasayfa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
 
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
