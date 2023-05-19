@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Taha Pek">
     <meta name="description" content="Kişisel website">
-    <meta name="keywords" content="taha,taha pek,Taha,Taha Pek,web,tasarım,dizayn,programlama,yazılım,geliştirme,kişisel">
+    <meta name="keywords"
+        content="taha,taha pek,Taha,Taha Pek,web,tasarım,dizayn,programlama,yazılım,geliştirme,kişisel">
     <link href="img/man.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     <title>Taha Pek Kişisel Web Sitesi</title>
@@ -176,48 +177,196 @@
                         <p class="" style="color: #de3545; font-size: 1.5em; font-family: sans-serif;">Görme Engelliler
                             için Basılı Dokümanlarda Sesli Metin Arama ve Seslendirme Mimarisi</p>
                         <p class="text-light">
-                            Bu çalışmada görme engelli bireylerin basılı medya (dijital olmayan medya) üzerinde
-                            sesli-interaktif olarak arama yapmalarına imkan sağlayan mobil destekli bir sistem
-                            gerçekleştirilmiştir.
+                            Bu çalışmada görme engelli bireylerin dijital olmayan dokümanlar üzerinde sesli-interaktif
+                            olarak arama yapmalarına imkan sağlayan mobil destekli bir sistem geliştirilmiştir.
+                            Literatürde yer alan görme engelli bireylere yönelik çalışmalar metin tabanlı bir görüntüyü
+                            direkt olarak seslendirme üzerine geliştirilmiştir. Ancak tüm metni kullanıcıya seslendirmek
+                            kullanıcının ulaşmak istediği bir bilgiye direkt erişimini uzatan ve bilgi metinde yoksa
+                            vakit kaybına neden olan bir yöntemdir. Bu nedenle çalışmamızda alınan görüntüdeki metin
+                            cümle, paragraf, liste ve tüm metin şeklinde bölümlere ayrılmaktadır. Bölümleme yapısını
+                            sağlamak için YOLO ve geliştirdiğimiz metin bölümlendirme algoritmasından yararlanılmıştır.
+                            Bu çalışma sayesinde görme engelli bir bireyin bir görüntüde arama yapmasına olanak
+                            sağlanmaktadır.
                         </p>
+                        
+                        <p class="" style="color: #df5e6b; font-size: 1.2em; font-family: sans-serif;">
+                        Projede Kullanılan Teknolojiler
+                        </p>
+                        
+                        <hr class="my-4 text-light">
 
-                        <p class="text-light">
-                            Çekilen görselde YOLO V8 algoritmasıyla tespit edilen metin görselleri paragraf ve liste
-                            şekilnde
-                            etiketlenmektedir. Etiketlenen veriler Google Vesion API ile image to text işlemine tâbi
-                            tutulmaktadır.
-                            Kullanıcının aramak istediği anahtar kelime aranmakta ve isteğe göre ; Tüm metin, paragraf,
-                            cümle ya da
-                            liste olacak şekilde sesli bir şekilde kullanıcıya iletilmektedir. Sistem tamamiyle sesli
-                            komutlar üzerine çalışmaktadır.
-                        </p>
+                        <ul class="agac-liste">
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                Konuşmayı Metne Çevirme Yöntemi ve Konfigürasyonu
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">React-Native-Voice</li>
+                                </ul>
+                            </li>
+
+                            
+                            <li class="agac-liste-ogesi agac-konu">
+                                Görüntü İçerisindeki Metin Tabanlı Nesnelerin Tespiti ve Metne Çevrilmesi
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">YOLO V8</li>
+                                    <li class="agac-liste-ogesi  text-light">Roboflow</li>
+                                    <li class="agac-liste-ogesi  text-light">Google Colab</li>
+                                </ul>
+                            </li>
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                Basılı Metni Dijital Ortama Aktarma (OCR)
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">Cloud Vision API</li>
+                                </ul>
+                            </li>
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                İlgili Sorgu Dönütünün Kullanıcıya Sesli Olarak Aktarılması (TTS)
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">Expo-Speech</li>
+                                </ul>
+                            </li>
+                            
+                            <li class="agac-liste-ogesi agac-konu">
+                                Mobil Arayüz
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">React-Native</li>
+                                </ul>
+                            </li>
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                Fotoğraf Çekme Ekranı
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">Expo ImagePicker</li>
+                                </ul>
+                            </li>
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                Sesli Arama Yapma ve Seçim Ekranı
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">React Native Voice</li>
+                                </ul>
+                            </li>
+
+                            <li class="agac-liste-ogesi agac-konu">
+                                Web Servis(API)
+                                <ul class="agac-liste">
+                                    <li class="agac-liste-ogesi  text-light">Python Fast-API</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <br>
+                        <p class="lead text-light"><em>Tübitak projesine göz atmak için <a
+                            href="https://github.com/orgs/Abvag-Bitirme-OCR/repositories"
+                            target="_blank">github</a> sayfama göz
+                        atabilirsiniz.</em></p>
+                       
                         <hr class="my-4 text-light">
 
                         <h6 class="display-6 text-light">Kişisel Projeler</h6>
                         <hr class="my-4 text-light">
 
                         <p class="" style="color: #de3545; font-size: 1.5em; font-family: sans-serif;">
-                        ASP.NETCore-6-ECommerceAPI
+                            ASP.NETCore-6-ECommerceAPI
                         </p>
 
                         <p class="text-light">
-                            Bu projenin amacı en yeni teknolojilerden yararlanarak fullstack bir E-Ticaret projesi geliştirerek
-                            ASP.NETCore ortamın proje geliştirmektir.
-                        </p>
+                            Bu projenin amacı en yeni teknolojilerden yararlanarak fullstack bir E-Ticaret projesi
+                            geliştirerek
+                            ASP.NETCore ortamında proje geliştirmektir.
+                        </p>                     
 
-                        <p class="text-light">
-                            Projede kurumsal mimarilerde sıklıkla kullanılan Onion Architecure'dan yararlanılmıştır. API kısmı içersinde
-                            CQRS Patern ve Mediatr kütüphanesinden yararlanılmıştır. Frontend tarafıyla eşzamanlı olarak server tarafından da 
-                            iletilişim sağlanması adına SignalR alt yapısı inşaa edilmiştir. Veritabanı olarak cloud ortamında çalışan Postgre Sql
-                            veritabanı tercih edilmiştir. Google Authentication, Google Storage gibi çeşitli cloud teknolojilerinden yararlanılmıştır.
-                            ORM araçlarından EntityFramework kullanılmıştır. Security tarafında JWT ve Microsoft.Identity kütüphanesinden yararlanılmıştır.
-                            Frontend için Angular frameworkünden yararlanılmıştır. Ekstra olarak da birçok güncel teknolojilerden yararlanılmıştır.
+                        <p class="" style="color: #df5e6b; font-size: 1.2em; font-family: sans-serif;">
+                            Projede Kullanılan Teknolojiler
+                            </p>
                             
-                        </p>
-                        
+                            <hr class="my-4 text-light">
+    
+                            <ul class="agac-liste">
+
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Baceknd
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">.NETCore 6</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Mimari
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Onion Architecture</li>
+                                    </ul>
+                                </li>
+    
+                                
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Design Pattern
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">CQRS</li>
+                                        <li class="agac-liste-ogesi  text-light">Mediatr</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Gerçek Zamanlı Çalışma
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Signal R</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Veri Tabanı
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">PostgreSQL (cloud)</li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Cloud Teknolojileri
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Google Cloud
+                                            <ul class="agac-liste">
+                                                <li class="agac-liste-ogesi  text-light">Google Authentication</li>
+                                                <li class="agac-liste-ogesi  text-light">Google Storage</li>
+                                                <li class="agac-liste-ogesi  text-light">VM Instance</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    ORM
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Entity Framework</li>
+                                    </ul>
+                                </li>
+                  
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Security
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Microsoft.Identity</li>
+                                        <li class="agac-liste-ogesi  text-light">JWT</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Frontend
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Angular Framework</li>
+                                    </ul>
+                                </li>
+    
+                            </ul>
+    
+                            <br>    
+
                         <p class="lead text-light"><em>ASP.NETCore-6-ECommerceAPI projesine göz atmak için <a
-                            href="https://github.com/tahapek5454/ASP.NETCore-6-ECommerceAPI" target="_blank">github</a> sayfama göz
-                        atabilirsiniz.</em></p>
+                                    href="https://github.com/tahapek5454/ASP.NETCore-6-ECommerceAPI"
+                                    target="_blank">github</a> sayfama göz
+                                atabilirsiniz.</em></p>
 
 
                         <hr class="my-4 text-light">
@@ -225,35 +374,106 @@
                             Self Waiter
                         </p>
                         <p class="text-light">
-                            Bu projenin amacı Cafe ve Restorantlarda kare kod ile menü görüntülemenin yanı sıra sipariş verme ve siparişi
-                            takip etme sistemi kurmaktır. 
+                            Bu projenin amacı Cafe ve Restorantlarda herhangi bir zaman kaybı yaşamadan kare kod ile menü görüntülemenin (çoklu dil destekli) yanı sıra sipariş
+                            verme ve siparişi takip etme sistemi kurmaktır.          
                         </p>
 
-                        <p class="text-light">
-                            Bu projede de .NETCore 6 üzerinde tıpkı E-Commerce projesindeki gibi bir API gerçekleştirilmiştir. Onion Architecure'dan yararlanılmıştır.
-                            CQRS Patern ve Mediatr kütüphanesinden yararlanılmıştır. SignalR alt yapısı inşaa edilmiştir. Dinamik dil desteği sağlanmıştır.
-                            Veritabanı olarak cloud ortamında çalışan Postgre Sql veritabanı tercih edilmiştir. Google Storage gibi çeşitli cloud teknolojilerinden yararlanılmıştır.
-                            ORM araçlarından EntityFramework kullanılmıştır. Security tarafında JWT ve Microsoft.Identity kütüphanesinden yararlanılmıştır.
-                            Frontend için ise React frameworkünden yararlanılmıştır.
 
-                        </p>
+                        <p class="" style="color: #df5e6b; font-size: 1.2em; font-family: sans-serif;">
+                            Projede Kullanılan Teknolojiler
+                            </p>
+                            
+                            <hr class="my-4 text-light">
+    
+                            <ul class="agac-liste">
+
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Baceknd
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">.NETCore 6</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Mimari
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Onion Architecture</li>
+                                    </ul>
+                                </li>
+    
+                                
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Design Pattern
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">CQRS</li>
+                                        <li class="agac-liste-ogesi  text-light">Mediatr</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Gerçek Zamanlı Çalışma
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Signal R</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Veri Tabanı
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">PostgreSQL (cloud)</li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Cloud Teknolojileri
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Google Cloud
+                                            <ul class="agac-liste">
+                                                <li class="agac-liste-ogesi  text-light">Google Storage</li>
+                                                <li class="agac-liste-ogesi  text-light">VM Instance</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    ORM
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Entity Framework</li>
+                                    </ul>
+                                </li>
+                  
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Security
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">Microsoft.Identity</li>
+                                        <li class="agac-liste-ogesi  text-light">JWT</li>
+                                    </ul>
+                                </li>
+    
+                                <li class="agac-liste-ogesi agac-konu">
+                                    Frontend
+                                    <ul class="agac-liste">
+                                        <li class="agac-liste-ogesi  text-light">React Framework</li>
+                                    </ul>
+                                </li>
+    
+                            </ul>
+    
+                            <br>    
+
 
                         <p class="lead text-light"><em>Self Waiter projesine göz atmak için <a
-                            href="https://github.com/KouSelfWaiter" target="_blank">github</a> sayfama göz
-                        atabilirsiniz.</em></p>
+                                    href="https://github.com/KouSelfWaiter" target="_blank">github</a> sayfama göz
+                                atabilirsiniz.</em></p>
 
                         <hr class="my-4 text-light">
 
 
-
-
-
-
-
-
                         <footer>
-                            <p class="lead text-light"><em>Yapmış olduğum daha birçok projeye göz atmak ve kaynak kodlarını incelemek için <a
-                                        href="https://github.com/tahapek5454" target="_blank">github</a> sayfama göz
+                            <p class="lead text-light"><em>Yapmış olduğum daha birçok projeye göz atmak ve kaynak
+                                    kodlarını incelemek için <a href="https://github.com/tahapek5454"
+                                        target="_blank">github</a> sayfama göz
                                     atabilirsiniz.</em></p>
                         </footer>
 

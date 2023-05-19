@@ -2,9 +2,36 @@
 body{
 
     background-image: url("../../img/arkaPlan1.jpg");
-    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
 
 }
+.agac-liste {
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .agac-konu{
+    color: #f77885;
+
+    font-family: sans-serif;
+  }
+  
+  .agac-liste-ogesi {
+    position: relative;
+  }
+  
+  .agac-liste-ogesi:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 0;
+    height: 100%;
+    border-left: 2px solid #ffff;
+  }
 #contact input {
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
@@ -29,6 +56,7 @@ header.backImage {
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+    height: 100vh;
 }
 
 header.backImage .backImage-sub {
